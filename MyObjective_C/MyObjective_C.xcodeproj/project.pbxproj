@@ -16,6 +16,7 @@
 		B472164E202A9CB40086D686 /* WZMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B472164C202A9CB40086D686 /* WZMainNavigationController.m */; };
 		B4721654202AA13E0086D686 /* WZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4721653202AA13E0086D686 /* WZHomeViewController.m */; };
 		B4721657202AA73C0086D686 /* WZNetworkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B4721656202AA73C0086D686 /* WZNetworkingTool.m */; };
+		B472165A202AA8EA0086D686 /* WZProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B4721659202AA8EA0086D686 /* WZProgressHUD.m */; };
 		D10EDAB60CAD241A187FAC11 /* libPods-MyObjective_C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8DFC23C10C455CBEB8E94A /* libPods-MyObjective_C.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,8 @@
 		B4721653202AA13E0086D686 /* WZHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZHomeViewController.m; sourceTree = "<group>"; };
 		B4721655202AA73C0086D686 /* WZNetworkingTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZNetworkingTool.h; sourceTree = "<group>"; };
 		B4721656202AA73C0086D686 /* WZNetworkingTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZNetworkingTool.m; sourceTree = "<group>"; };
+		B4721658202AA8EA0086D686 /* WZProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZProgressHUD.h; sourceTree = "<group>"; };
+		B4721659202AA8EA0086D686 /* WZProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				B472164F202AA0B00086D686 /* WZCommon.h */,
 				B4721655202AA73C0086D686 /* WZNetworkingTool.h */,
 				B4721656202AA73C0086D686 /* WZNetworkingTool.m */,
+				B4721658202AA8EA0086D686 /* WZProgressHUD.h */,
+				B4721659202AA8EA0086D686 /* WZProgressHUD.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4721654202AA13E0086D686 /* WZHomeViewController.m in Sources */,
+				B472165A202AA8EA0086D686 /* WZProgressHUD.m in Sources */,
 				B472164E202A9CB40086D686 /* WZMainNavigationController.m in Sources */,
 				B472164D202A9CB40086D686 /* WZMainTabBarController.m in Sources */,
 				B4721641202A9AE40086D686 /* main.m in Sources */,

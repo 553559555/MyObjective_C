@@ -8,6 +8,7 @@
 
 #import "WZHomeViewController.h"
 #import "WZCommon.h"
+#import "WZProgressHUD.h"
 
 @interface WZHomeViewController ()
 
@@ -18,7 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = kDefaultColor;
+    
     NSLog(@"screenWidth = %f---screenHeight = %f----navBarHeight = %f---tabBarHeight = %f---widthRatio = %f---heightRatio = %f", kScreenHeight, kScreenWidth, kNavigationBarHeight, kTabBarHeight, kWidthRatio, kHeightRatio);
+ 
+    [[WZProgressHUD sharedProgressHUD] showText:@"网络请求失败"];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [[WZProgressHUD sharedProgressHUD] showLoaddingHUD];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[WZProgressHUD sharedProgressHUD] dimssHUD];
+    });
     
 }
 

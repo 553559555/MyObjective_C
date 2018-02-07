@@ -23,7 +23,7 @@
 #define kRandomColor [UIColor colorWithRed:arc4random() % 256 / 256.0 green:arc4random() % 256 / 256.0 blue:arc4random() % 256 / 256.0 alpha:1]
 
 // iPhone X
-static const CGFloat kNavigationBarHeight = 88;
-static const CGFloat kTabBarHeight = 83;
+#define kNavigationBarHeight kScreenHeight == 812 ? 88 : 64
+#define kTabBarHeight kScreenHeight == 812 ? 83 : 49
 
 #endif /* WZCommon_h */

@@ -22,8 +22,7 @@
     self.view.backgroundColor = kDefaultColor;
     
     NSLog(@"screenWidth = %f---screenHeight = %f----navBarHeight = %f---tabBarHeight = %f---widthRatio = %f---heightRatio = %f", kScreenHeight, kScreenWidth, kNavigationBarHeight, kTabBarHeight, kWidthRatio, kHeightRatio);
- 
-    [[WZProgressHUD sharedProgressHUD] showText:@"网络请求失败"];
+
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

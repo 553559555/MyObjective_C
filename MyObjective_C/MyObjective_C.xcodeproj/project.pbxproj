@@ -19,6 +19,7 @@
 		B472165A202AA8EA0086D686 /* WZProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B4721659202AA8EA0086D686 /* WZProgressHUD.m */; };
 		B472165F202AD1FB0086D686 /* WZBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B472165E202AD1FB0086D686 /* WZBaseTableView.m */; };
 		B4721665202AD5210086D686 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = B4721664202AD5210086D686 /* UIColor+Hex.m */; };
+		B4721668202AD6340086D686 /* UIBarButtonItem+BackNavigtionItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B4721667202AD6340086D686 /* UIBarButtonItem+BackNavigtionItemButton.m */; };
 		D10EDAB60CAD241A187FAC11 /* libPods-MyObjective_C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8DFC23C10C455CBEB8E94A /* libPods-MyObjective_C.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		B472165E202AD1FB0086D686 /* WZBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZBaseTableView.m; sourceTree = "<group>"; };
 		B4721663202AD5210086D686 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		B4721664202AD5210086D686 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		B4721666202AD6340086D686 /* UIBarButtonItem+BackNavigtionItemButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BackNavigtionItemButton.h"; sourceTree = "<group>"; };
+		B4721667202AD6340086D686 /* UIBarButtonItem+BackNavigtionItemButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BackNavigtionItemButton.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				B4721659202AA8EA0086D686 /* WZProgressHUD.m */,
 				B4721663202AD5210086D686 /* UIColor+Hex.h */,
 				B4721664202AD5210086D686 /* UIColor+Hex.m */,
+				B4721666202AD6340086D686 /* UIBarButtonItem+BackNavigtionItemButton.h */,
+				B4721667202AD6340086D686 /* UIBarButtonItem+BackNavigtionItemButton.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4721668202AD6340086D686 /* UIBarButtonItem+BackNavigtionItemButton.m in Sources */,
 				B4721654202AA13E0086D686 /* WZHomeViewController.m in Sources */,
 				B472165A202AA8EA0086D686 /* WZProgressHUD.m in Sources */,
 				B472164E202A9CB40086D686 /* WZMainNavigationController.m in Sources */,

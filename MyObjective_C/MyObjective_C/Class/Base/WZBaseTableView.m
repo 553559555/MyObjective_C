@@ -15,8 +15,8 @@
     if (self = [super initWithFrame:frame]) {
         if (@available(iOS 11.0, *)) {
             self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-            self.contentInset = UIEdgeInsetsMake(kNavigationBarHeight, 0, 0, 0);
-            self.scrollIndicatorInsets = self.contentInset;
+            self.contentInset                   = UIEdgeInsetsMake(kNavigationBarHeight, 0, 0, 0);
+            self.scrollIndicatorInsets          = self.contentInset;
         }
     }
     return self;

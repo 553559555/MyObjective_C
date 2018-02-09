@@ -23,9 +23,7 @@
     
     self.view.backgroundColor = [UIColor colorWithHexString:@"abcdef"];
     
-
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

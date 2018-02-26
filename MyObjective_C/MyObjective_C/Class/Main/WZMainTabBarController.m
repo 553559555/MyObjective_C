@@ -38,15 +38,14 @@
 #pragma mark - 封装创建子控制器方法
 - (void)settingChildVC:(UIViewController *)VC title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName {
     
-    UIImage *image = [UIImage imageNamed:imageName];
-    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    UIImage *selectImage = [UIImage imageNamed:selectedImageName];
-    selectImage = [selectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
+    UIImage *image              = [UIImage imageNamed:imageName];
+    image                       = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *selectImage        = [UIImage imageNamed:selectedImageName];
+    selectImage                 = [selectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     VC.title                    = title;
     VC.tabBarItem.image         = image;
     VC.tabBarItem.selectedImage = selectImage;
+    
     [self addChildViewController:VC];
     
 }

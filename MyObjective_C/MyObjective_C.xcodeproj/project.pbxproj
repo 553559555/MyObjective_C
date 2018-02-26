@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4158B2E202D7B8400E31C58 /* UITableView+HYBCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B4158B2B202D7B8300E31C58 /* UITableView+HYBCacheHeight.m */; };
+		B4158B2F202D7B8400E31C58 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B4158B2D202D7B8300E31C58 /* UITableViewCell+HYBMasonryAutoCellHeight.m */; };
 		B4721633202A9AE40086D686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4721632202A9AE40086D686 /* AppDelegate.m */; };
 		B4721639202A9AE40086D686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4721637202A9AE40086D686 /* Main.storyboard */; };
 		B472163B202A9AE40086D686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B472163A202A9AE40086D686 /* Assets.xcassets */; };
@@ -27,6 +29,10 @@
 		1F8DFC23C10C455CBEB8E94A /* libPods-MyObjective_C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyObjective_C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A764F6FC7E6E46FCF9428C9 /* Pods-MyObjective_C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyObjective_C.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyObjective_C/Pods-MyObjective_C.release.xcconfig"; sourceTree = "<group>"; };
 		7F86F83E0D10544854DC0373 /* Pods-MyObjective_C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyObjective_C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyObjective_C/Pods-MyObjective_C.debug.xcconfig"; sourceTree = "<group>"; };
+		B4158B2A202D7B8300E31C58 /* UITableView+HYBCacheHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HYBCacheHeight.h"; sourceTree = "<group>"; };
+		B4158B2B202D7B8300E31C58 /* UITableView+HYBCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HYBCacheHeight.m"; sourceTree = "<group>"; };
+		B4158B2C202D7B8300E31C58 /* UITableViewCell+HYBMasonryAutoCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+HYBMasonryAutoCellHeight.h"; sourceTree = "<group>"; };
+		B4158B2D202D7B8300E31C58 /* UITableViewCell+HYBMasonryAutoCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+HYBMasonryAutoCellHeight.m"; sourceTree = "<group>"; };
 		B472162E202A9AE40086D686 /* MyObjective_C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyObjective_C.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4721631202A9AE40086D686 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4721632202A9AE40086D686 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +80,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B4158B29202D7B7300E31C58 /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B4158B2A202D7B8300E31C58 /* UITableView+HYBCacheHeight.h */,
+				B4158B2B202D7B8300E31C58 /* UITableView+HYBCacheHeight.m */,
+				B4158B2C202D7B8300E31C58 /* UITableViewCell+HYBMasonryAutoCellHeight.h */,
+				B4158B2D202D7B8300E31C58 /* UITableViewCell+HYBMasonryAutoCellHeight.m */,
+			);
+			path = AutoLayout;
+			sourceTree = "<group>";
+		};
 		B4721625202A9AE40086D686 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +127,7 @@
 		B4721647202A9C0A0086D686 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B4158B29202D7B7300E31C58 /* AutoLayout */,
 				B472164F202AA0B00086D686 /* WZCommon.h */,
 				B4721655202AA73C0086D686 /* WZNetworkingTool.h */,
 				B4721656202AA73C0086D686 /* WZNetworkingTool.m */,
@@ -263,9 +281,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyObjective_C/Pods-MyObjective_C-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -300,12 +321,14 @@
 				B4721668202AD6340086D686 /* UIBarButtonItem+BackNavigtionItemButton.m in Sources */,
 				B4721654202AA13E0086D686 /* WZHomeViewController.m in Sources */,
 				B472165A202AA8EA0086D686 /* WZProgressHUD.m in Sources */,
+				B4158B2F202D7B8400E31C58 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */,
 				B472164E202A9CB40086D686 /* WZMainNavigationController.m in Sources */,
 				B472165F202AD1FB0086D686 /* WZBaseTableView.m in Sources */,
 				B4721665202AD5210086D686 /* UIColor+Hex.m in Sources */,
 				B472164D202A9CB40086D686 /* WZMainTabBarController.m in Sources */,
 				B4721641202A9AE40086D686 /* main.m in Sources */,
 				B4721657202AA73C0086D686 /* WZNetworkingTool.m in Sources */,
+				B4158B2E202D7B8400E31C58 /* UITableView+HYBCacheHeight.m in Sources */,
 				B4721633202A9AE40086D686 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

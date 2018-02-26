@@ -9,5 +9,7 @@ target 'MyObjective_C' do
   pod 'SDWebImage'
   pod 'AFNetworking'
   pod 'Masonry'
+  pod 'MJRefresh'
   pod 'MBProgressHUD'
 end
+

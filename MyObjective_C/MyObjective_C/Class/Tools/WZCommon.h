@@ -26,4 +26,8 @@
 #define kNavigationBarHeight kScreenHeight == 812 ? 88 : 64
 #define kTabBarHeight kScreenHeight == 812 ? 83 : 49
 
+// 地址
+#define serverURL @"http://test.liren.com/"
+
 #endif /* WZCommon_h */
+

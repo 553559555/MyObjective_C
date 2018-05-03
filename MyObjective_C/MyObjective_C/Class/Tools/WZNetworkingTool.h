@@ -12,8 +12,12 @@
 
 + (instancetype)sharedNetWorkingTool;
 
-- (void)GETRequestURLStrig:(NSString *)urlString andParameters:(NSDictionary *)parameters andSucces:(void(^)(id response))succes andFail:(void(^)(NSError *err))fail;
+- (void)GETRequestURLStrig:(NSString *)urlString withParameters:(NSDictionary *)parameters Succes:(void(^)(id response))succes Fail:(void(^)(NSError *err))fail;
 
-- (void)POSTRequestURLString:(NSString *)urlString andParameters:(NSDictionary *)parameters andSucces:(void(^)(id response))succes andFail:(void(^)(NSError *err))fail;
+- (void)POSTRequestURLString:(NSString *)urlString withParameters:(NSDictionary *)parameters Succes:(void(^)(id response))succes Fail:(void(^)(NSError *err))fail;
+
+- (void)GETRequestURLStrig:(NSString *)urlString withParameters:(NSDictionary *)parameters loaddingView:(UIView *)currenView Succes:(void(^)(id response))succes Fail:(void(^)(NSError *err))fail;
+
+- (void)POSTRequestURLString:(NSString *)urlString withParameters:(NSDictionary *)parameters loaddingView:(UIView *)currenView Succes:(void(^)(id response))succes Fail:(void(^)(NSError *err))fail;
 
 @end

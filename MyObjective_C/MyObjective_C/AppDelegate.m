@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WZMainTabBarController.h"
+#import "WZHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [UIWindow new];
-    self.window.rootViewController = [WZMainTabBarController new];
+    self.window.rootViewController = [WZHomeViewController new];
     [self.window makeKeyAndVisible];
     
     return YES;
